@@ -1,0 +1,15 @@
+#image{
+   transform: rotateY(180deg); /* Rotate 180 degrees along the y-axis */
+}
+
+#image {
+  transform: rotateX(180deg); /* Rotate 180 degrees along the x-axis*/
+}
+
+img {
+  transition: -webkit-transform 0.25s ease;
+}
+
+img:active {
+  -webkit-transform: scale(2);
+}

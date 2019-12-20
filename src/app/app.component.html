@@ -1,0 +1,38 @@
+<div class="container-fluid">
+  <h1>Image Cropper</h1>
+    <div class="col-md-4">
+      <div class="panel panel-primary">
+        <div class="panel-body">
+          <p>Implement an Image Cropper, which should provide following functionalities</p>
+          <ul>
+            <li>Rotate</li>
+            <li>Flip Vertical</li>
+            <li>Flip Horizontal</li>
+            <li>Zoom In</li>
+            <li>Zoom Out</li>
+            <li>Download the cropped Image</li>
+          </ul>
+          <p>You can use any ready framework for the implementation</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-8 img" >
+
+      <img id="image"  [@rotatedState]='state' src={{imgSrc}} alt="Picture" >
+      <hr/>
+
+      <button class="btn btn-primary mr-2" id="btn-rotate" (click)="rotate()">Rotate</button>
+      <button class="btn btn-primary mr-2"  ngbButton (click)=" flipIt()">Flip Verticle</button>
+      <button class="btn btn-primary mr-2"  ngbButton (click)=" flipIt()">Flip Horizontal</button>
+      <button class="btn btn-primary mr-2" id="btn-zi" (click)="zoomIn()">Zoom In</button>
+      <button class="btn btn-primary mr-2" id="btn-zo" (click)="zoomOut()">Zoom Out</button>
+      <button class="btn btn-primary mr-2" id="btn-dwn" (click)="download()">Download</button>
+
+    </div>
+</div>
+
+
+
+<app-flip></app-flip>
+<app-flip-y></app-flip-y>
+<app-zoom></app-zoom>
